@@ -1,0 +1,22 @@
+<div>
+      <div className="max-w-sm rounded overflow-hidden shadow-lg text-center mt-48">
+        <div className="flex justify-center">
+          <img className=" h-20 w-20" src={image} alt="crypto" />
+        </div>
+        <h1 className=" text-xl ">
+          {name}-{symbol}
+        </h1>
+        <div>
+          <p>₹{price}</p>
+          <p>₹{volume.toLocaleString()}</p>
+
+          {priceChange < 0 ? (
+            <p>{priceChange.toFixed(2)}%</p>
+          ) : (
+            <p>{priceChange.toFixed(2)}%</p>
+          )}
+
+          <p>Mkt Cap: ₹{marketcap.toLocaleString()}</p>
+        </div>
+      </div>
+    </div>
