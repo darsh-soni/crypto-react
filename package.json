@@ -1,4 +1,5 @@
 {
+  "homepage": "https://darshsoni28.github.io/crypto-react",
   "name": "crypto-react",
   "version": "0.1.0",
   "private": true,
@@ -7,11 +8,14 @@
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.9.3",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
